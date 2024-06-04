@@ -17,7 +17,7 @@ const emits = defineEmits(['closeMenu'])
 
   <nav
     v-if="Mobile != false && Open == false"
-    class="animate-fadeout absolute w-full bg-green-200 font-sans text-base font-medium"
+    class="animate-fadeout absolute top-16 w-full bg-green-200 font-sans text-base font-medium"
   >
     <NuxtLink  class="block w-full p-4 text-center" to="/">Home</NuxtLink >
     <NuxtLink  class="block w-full p-4 text-center" to="/portfolio">Portfolio</NuxtLink >
@@ -27,7 +27,7 @@ const emits = defineEmits(['closeMenu'])
 
   <nav
     v-else-if="Mobile != false && Open == true"
-    class="animate-fadein animate-duration-500 absolute block w-full overflow-hidden bg-green-200 font-sans text-base font-medium sm:hidden"
+    class="animate-fadein animate-duration-500 absolute top-16 block w-full overflow-hidden bg-green-200 font-sans text-base font-medium sm:hidden"
   >
     <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"

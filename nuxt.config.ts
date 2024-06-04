@@ -8,5 +8,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  
+  app: {
+    pageTransition: { name: 'fade', mode: 'out-in' }
+  },
 })

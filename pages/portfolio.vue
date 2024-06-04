@@ -1,7 +1,10 @@
 <template>
-    <Head>
+    
+    <div>
+        <Head>
         <Title>Portfolio</Title>
     </Head>
-
-    <h1>Portfolio</h1>
+        <h1>Portfolio</h1>
+    </div>
+    
 </template>
