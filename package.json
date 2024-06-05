@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxthub/core": "^0.6.8",
     "nuxt": "^3.11.2",
     "tailwindcss-animated": "^1.1.0",
     "vue": "^3.4.27",

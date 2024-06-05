@@ -11,4 +11,8 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
+  modules: ["@nuxthub/core"],
+  hub:{
+    database: true,
+  }
 })
