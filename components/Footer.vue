@@ -2,7 +2,7 @@
     import Twitter  from './icons/Twitter.vue';
     import Facebook from './icons/Facebook.vue';
     import Instagram from './icons/Instagram.vue';
-    import GitHub from './icons/GitHub.vue';
+    import GitHub from './icons/Github.vue';
 
 
     const currentYear = new Date().getFullYear();
