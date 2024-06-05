@@ -14,5 +14,10 @@ export default defineNuxtConfig({
   modules: ["@nuxthub/core"],
   hub:{
     database: true,
+  },
+  $development: {
+    hub: {
+      remote: 'preview'
+    }
   }
 })

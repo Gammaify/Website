@@ -1,3 +1,8 @@
+<script setup lang="ts">
+    const { data: contacts } = await useFetch('/api/contact')
+
+  
+</script>
 <template>
     
     <div>
@@ -5,7 +10,9 @@
         <Title>Contact</Title>
     </Head>
         <h1>Contact</h1>
-        
+        <p v-for="contact in contacts">
+            {{ contact.first_name }}
+        </p>
     </div>
     
 </template>
