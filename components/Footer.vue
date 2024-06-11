@@ -11,10 +11,11 @@
 
 
 <template>
-    <div class="sm:flex justify-between p-4 max-sm:block max-sm:m-auto border-solid border-b-2 border-green-600 w-full bg-green-200">
-        <NuxtLink to="/">
-            <img class="m-auto max-sm:mb-4 hover:animate-jump" src="../assets/images/logo-green.png" width="50" height="50" alt="Gammaify Logo">
-        </NuxtLink>
+    <div class="sm:flex justify-between p-4 max-sm:block max-sm:m-auto backgroundColor items-center w-9/12 m-auto">
+        <!-- <NuxtLink to="/">
+            <img class="m-auto max-sm:mb-4 hover:animate-jump" src="../assets/images/logo-white.png" width="50" height="50" alt="Gammaify Logo">
+        </NuxtLink> -->
+        <p class="text-white max-sm:text-center max-sm:mb-4">Copyright &copy;{{ currentYear }} Gammaify</p>
         <div class="flex justify-evenly items-center w-48 max-sm:m-auto">
             <Twitter />
             <Facebook />
@@ -22,7 +23,5 @@
             <GitHub />
         </div>
     </div>
-    <div class="flex justify-center p-2 bg-green-200">
-        <p class="text-green-600">Copyright &copy;{{ currentYear }} Gammaify</p>
-    </div>
+    
 </template>

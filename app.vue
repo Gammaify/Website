@@ -18,9 +18,9 @@
 
 
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen backgroundColor">
     <Header />
-    <div class="flex-1">
+    <div class="flex-1 max-md:w-full w-9/12 m-auto p-4">
       <NuxtPage />
     </div>
       
@@ -29,6 +29,13 @@
 </template>
 
 <style>
+h1, h4, p{
+  color: white
+}
+
+.backgroundColor{
+  background-color: #006241;
+}
 
 .fade-enter-active,
 .fade-leave-active {

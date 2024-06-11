@@ -20,10 +20,10 @@ function closeMenu() {
 </script>
 
 <template>
-  <div class="flex items-center justify-between bg-green-600 text-white">
+  <div class="flex items-center justify-between backgroundColor text-white max-md:w-full w-9/12 m-auto">
     <RouterLink to="/">
       <img
-        class="ml-3 hover:animate-jump"
+        class="ml-3 hover:animate-jump p-1"
         src="../assets/images/logo-white.png"
         width="50"
         height="50"

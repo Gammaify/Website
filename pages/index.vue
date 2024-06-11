@@ -5,7 +5,7 @@
 
 <template>
     
-    <div>
+    <div class="">
         <Head>
         <Title>Home</Title>
     </Head>
