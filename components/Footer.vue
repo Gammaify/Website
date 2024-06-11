@@ -15,7 +15,7 @@
         <!-- <NuxtLink to="/">
             <img class="m-auto max-sm:mb-4 hover:animate-jump" src="../assets/images/logo-white.png" width="50" height="50" alt="Gammaify Logo">
         </NuxtLink> -->
-        <p class="text-white max-sm:text-center max-sm:mb-4">Copyright &copy;{{ currentYear }} Gammaify</p>
+        <p class="text-white max-sm:text-center max-sm:mb-4">&copy;{{ currentYear }} Gammaify</p>
         <div class="flex justify-evenly items-center w-48 max-sm:m-auto">
             <Twitter />
             <Facebook />

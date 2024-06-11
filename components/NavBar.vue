@@ -8,17 +8,17 @@ const emits = defineEmits(['closeMenu'])
 </script>
 
 <template>
-  <nav v-if="Mobile != true" class="flex select-none font-sans text-base font-medium max-sm:hidden pr-4">
+  <nav v-if="Mobile != true" class="flex select-none font-sans text-base font-medium max-sm:hidden pr-4 textPrimaryColor">
     <NuxtLink  class="p-4 hover:animate-jump" to="/">Home</NuxtLink >
     <NuxtLink  class="p-4 hover:animate-jump" to="/portfolio">Portfolio</NuxtLink >
-      <NuxtLink  class="p-4 hover:animate-jump" to="/hosting">Hosting</NuxtLink >
+    <NuxtLink  class="p-4 hover:animate-jump" to="/hosting">Hosting</NuxtLink >
     <NuxtLink  class="p-4 hover:animate-jump" to="/about">About</NuxtLink >
-    <NuxtLink  class="p-4 hover:animate-jump" to="/contact">Contact</NuxtLink >
+    <NuxtLink  class="hover:animate-jump primaryButton p-4 ml-4" to="/contact">Contact</NuxtLink >
   </nav>
 
   <nav
     v-if="Mobile != false && Open == false"
-    class="animate-fadeout absolute top-16 w-full bg-green-200 font-sans text-base font-medium"
+    class="animate-fadeout absolute top-16 w-full secondBackgroundColor font-sans text-base font-medium textSecondaryColor"
   >
     <NuxtLink  class="block w-full p-4 text-center" to="/">Home</NuxtLink >
     <NuxtLink  class="block w-full p-4 text-center" to="/portfolio">Portfolio</NuxtLink >
@@ -29,7 +29,7 @@ const emits = defineEmits(['closeMenu'])
 
   <nav
     v-else-if="Mobile != false && Open == true"
-    class="animate-fadein animate-duration-500 absolute top-16 block w-full overflow-hidden bg-green-200 font-sans text-base font-medium sm:hidden"
+    class="animate-fadein animate-duration-500 absolute top-16 block w-full overflow-hidden secondBackgroundColor font-sans text-base font-medium sm:hidden"
   >
     <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"
@@ -65,7 +65,7 @@ const emits = defineEmits(['closeMenu'])
 
   <nav
     v-else
-    class="absolute hidden w-full overflow-hidden bg-green-200 font-sans text-base font-medium sm:hidden"
+    class="absolute hidden w-full overflow-hidden secondBackgroundColor font-sans text-base font-medium sm:hidden"
   >
     <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"

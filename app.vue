@@ -20,7 +20,7 @@
 <template>
   <div class="flex flex-col min-h-screen backgroundColor">
     <Header />
-    <div class="flex-1 max-md:w-full w-9/12 m-auto p-4">
+    <div class="flex-1 max-md:w-full w-9/12 m-auto p-4 textPrimaryColor">
       <NuxtPage />
     </div>
       
@@ -29,12 +29,33 @@
 </template>
 
 <style>
-h1, h4, p{
-  color: white
+.textPrimaryColor{
+  color: #E8F3F5;
+}
+
+.textSecondaryColor{
+  color: #006241;
 }
 
 .backgroundColor{
   background-color: #006241;
+}
+
+.secondBackgroundColor{
+  background-color: #90E2BA;
+}
+
+.borderColor{
+  border-color: #90E2BA;
+}
+
+.primaryButton{
+  background-color: #00BEFF;
+  height: 35px;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 .fade-enter-active,

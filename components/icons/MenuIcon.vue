@@ -2,7 +2,7 @@
   <div class="p-4 sm:hidden">
     <svg
       v-if="Open == false"
-      class="h-8 w-8 text-white hover:cursor-pointer"
+      class="h-8 w-8 textPrimaryColor hover:cursor-pointer"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -17,7 +17,7 @@
 
     <svg
       v-else-if="Open == true"
-      class="h-8 w-8 text-white hover:cursor-pointer"
+      class="h-8 w-8 textPrimaryColor hover:cursor-pointer"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -31,7 +31,7 @@
 
     <svg
       v-else
-      class="h-8 w-8 text-white hover:cursor-pointer"
+      class="h-8 w-8 textPrimaryColor hover:cursor-pointer"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
