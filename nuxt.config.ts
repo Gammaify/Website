@@ -9,7 +9,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  nitro: {
+    preset: 'node-server'
+  },
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
