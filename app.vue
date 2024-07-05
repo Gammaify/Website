@@ -12,7 +12,8 @@
     titleTemplate: (titleChunk) => {
       return titleChunk ? `${titleChunk} - Gammaify` : 'Gammaify';
     },
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' }],
   })
 </script>
 
@@ -54,7 +55,6 @@
   height: 35px;
   align-items: center;
   display: flex;
-  margin-top: 10px;
   border-radius: 10px;
 }
 

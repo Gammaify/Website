@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 export default {
   content: [
   "./components/**/*.{js,vue,ts}",
@@ -26,6 +27,10 @@ export default {
       }
     },
   },
-  plugins: [require('tailwindcss-animated')],
+  plugins: [require('tailwindcss-animated'),
+    plugin(function({ addVariant }){
+      addVariant('not-last', '&:not(:last-child)')
+    }),
+  ],
 }
 

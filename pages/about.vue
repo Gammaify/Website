@@ -4,7 +4,21 @@
         <Head>
         <Title>About</Title>
     </Head>
-        <h1>About</h1>
+        <h1 class="text-center text-3xl p-5">About</h1>
+        <div class="mx-auto w-4/5 md:w-3/5 lg:w-3/5 xl:w-1/3 pb-8">
+            <img class="rounded-full borderColor border-4" src="/images/profile.jpg" alt="Picture of Me">
+        </div>
+        <p class="pb-4">Welcome to my corner of the web!</p>
+        <p class="pb-4">I’m Oliver Smith, a dedicated website developer with over five years of experience in crafting dynamic and user-friendly websites. My expertise spans across a range of technologies, including HTML, CSS, JavaScript, C#, and TypeScript. With a passion for coding and a commitment to deliver high-quality, responsive websites tailored to meet the unique needs of each client.</p>
+        <p class="pb-4">My mission is to empower businesses by creating bespoke websites that are not only visually appealing but also functionally robust. I believe that a great website should not only look good but also provide a seamless user experience, which is why I focus on both design and functionality.</p>
+        <h4 class="text-2xl text-center pb-4">My Services</h4>
+        <ul class="list-disc pl-10">
+            <li class="pt-2 pb-2">Custom Website Development: Whether you need a brand-new website or a redesign of your existing site, I bring your vision to life with custom solutions.</li>
+            <li class="pt-2 pb-2">Responsive Design: I ensure your website looks and performs great on all devices, from desktops to smartphones.</li>
+            <li class="pt-2 pb-2">E-commerce Solutions: I build secure and scalable e-commerce platforms that help you sell online with ease. My best solution for e-commerce is Shopify.</li>
+            <li class="pt-2 pb-2">Web Applications: Leveraging my expertise in C# and TypeScript, Building robust backend systems and applications that support your business logic.</li>
+            <li class="pt-2 pb-2">Maintenance and Support: My services don’t end at launch. I provide ongoing maintenance and support to keep your website running smoothly.</li>
+        </ul>
     </div>
     
 </template>

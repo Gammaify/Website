@@ -2,6 +2,7 @@
 
 import NavBar from '../components/NavBar.vue'
 import MenuIcon from '../components/icons/MenuIcon.vue'
+import ContactBtn from './ContactBtn.vue';
 const isMenuOpen = useState<boolean | undefined>()
 
 function OpenMenu() {
@@ -12,6 +13,8 @@ function OpenMenu() {
   } else {
     isMenuOpen.value = true
   }
+
+  
 }
 
 function closeMenu() {
@@ -24,7 +27,7 @@ function closeMenu() {
     <RouterLink to="/">
       <img
         class="ml-3 hover:animate-jump p-1"
-        src="../assets/images/logo-white2.png"
+        src="/images/logo-white2.png"
         width="50"
         height="50"
         title="Gammaify Logo"
@@ -32,7 +35,12 @@ function closeMenu() {
       />
     </RouterLink>
     <NavBar :Mobile="false" :Open="isMenuOpen" />
-    <MenuIcon :Open="isMenuOpen" @click="OpenMenu" />
+
+    <div class="max-sm:flex sm:hidden items-center" >
+      <ContactBtn @close-menu="closeMenu" />
+      <MenuIcon :Open="isMenuOpen" @click="OpenMenu" />
+    </div>
+    
   </div>
   <NavBar :Mobile="true" :Open="isMenuOpen" @close-menu="closeMenu" />
 </template>

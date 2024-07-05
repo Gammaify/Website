@@ -10,13 +10,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "mysql2": "^3.10.2",
+    "nodemailer": "^6.9.14",
     "nuxt": "^3.11.2",
+    "nuxt-security": "^2.0.0-rc.6",
     "tailwindcss-animated": "^1.1.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "@types/nodemailer": "^6.4.15",
     "autoprefixer": "^10.4.19",
+    "nuxt-cron": "^1.5.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "wrangler": "^3.59.0"

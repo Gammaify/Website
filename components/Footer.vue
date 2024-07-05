@@ -20,7 +20,7 @@
             <Twitter />
             <Facebook />
             <Instagram />
-            <GitHub />
+            <GitHub Link="https://github.com/Gammaify"/>
         </div>
     </div>
     
