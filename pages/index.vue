@@ -19,7 +19,7 @@
             <PortfolioCard ImageURL="/images/traitorsDigitalGame.png" ProjectName="Traitors Digital Game" GitHubLink="https://github.com/Gammaify/TraitorsDigitalGame" WebsiteLink="https://www.thetraitors.tv/g/traitors-card-game/index.html" />
             <PortfolioCard ImageURL="/images/catchphraseMicrosite.png" ProjectName="Catchphrase Micro-site" GitHubLink="https://github.com/Gammaify/CatchphraseMicrosite" WebsiteLink="https://www.catchphrasecardgame.com/" />
             <PortfolioCard ImageURL="/images/popmasterMicrosite.png" ProjectName="Popmaster Micro-site" GitHubLink="https://github.com/Gammaify/PopmasterMicrosite" WebsiteLink="https://www.popmastergame.co.uk/board-game" />
-            <PortfolioCard ImageURL="/images/traitorsMicrosite.png" ProjectName="Traitors Micro-site" GitHubLink="https://github.com/Gammaify/TraitorsMicrosite" WebsiteLink="https://www.thetraitorscardgame.co.uk/" />
+            <PortfolioCard ImageURL="/images/TraitorsMicrosite.png" ProjectName="Traitors Micro-site" GitHubLink="https://github.com/Gammaify/TraitorsMicrosite" WebsiteLink="https://www.thetraitorscardgame.co.uk/" />
             <PortfolioCard ImageURL="/images/tapSite.png" ProjectName="The Admin Practice" GitHubLink="https://github.com/Gammaify/TheAdminPractice" WebsiteLink="" />
             
         </div>
