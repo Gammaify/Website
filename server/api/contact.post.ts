@@ -15,29 +15,29 @@ const access: ConnectionOptions = {
 
 
 export default defineEventHandler(async (event) => {
-    
-    const data = await readBody(event);
+    return 'success'
+    // const data = await readBody(event);
 
 
-    const connection = await mysql.createConnection(access);
-    const query = getQuery(event);
-    try{
-        const [results] = await connection.query(
-            'INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)',
-            [data.name, data.email, data.message]
-        )  
-        var resultJson = JSON.parse(JSON.stringify(results));
-        if (resultJson.affectedRows > 0) {
-            return 'success'
-        }
-        else{
-            return 'error'
-        }
+    // const connection = await mysql.createConnection(access);
+    // const query = getQuery(event);
+    // try{
+    //     const [results] = await connection.query(
+    //         'INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)',
+    //         [data.name, data.email, data.message]
+    //     )  
+    //     var resultJson = JSON.parse(JSON.stringify(results));
+    //     if (resultJson.affectedRows > 0) {
+    //         return 'success'
+    //     }
+    //     else{
+    //         return 'error'
+    //     }
         
         
-    } catch(err) {
-       return 'error'
-    }
+    // } catch(err) {
+    //    return 'error'
+    // }
 
 
     // var transport = nodemailer.createTransport({
