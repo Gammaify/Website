@@ -17,7 +17,6 @@ const formData = ref<FormData>({
     message: ''
 })
 
-const sendMessage = useState<boolean>();
 
 const message = useState<string>();
 const nameError = useState<string>();
@@ -27,10 +26,11 @@ const messageError = useState<string>();
 
 
 function validateData(data: FormData) {
+    var sendMessage = true;
     var nameRegex = /^[a-zA-Z\s]*$/;
         if (!nameRegex.test(data.name) || data.name == ''){
             nameError.value = 'Please enter a valid name.'
-            sendMessage.value = false;
+            sendMessage = false;
         }
         else{
             nameError.value = '';
@@ -40,34 +40,33 @@ function validateData(data: FormData) {
         var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         if (!emailRegex.test(data.email) || data.email == ''){
             emailError.value = 'Please enter a valid email.'
-            sendMessage.value = false;
+            sendMessage = false;
         }
         else{
             emailError.value = '';
            
         }
 
-        var messageRegex = /^[a-zA-Z]+(?:\s*[a-zA-Z0-9\p{P}]+)*$/v;
+        var messageRegex = /^(?=.*[A-Z0-9])[()£?\n|@&-;\w.,!"'\/ ]+$/i;
         if (!messageRegex.test(data.message) || data.message == ''){
             messageError.value = 'Please use only english words and punctuation.'
-            sendMessage.value = false;
+            sendMessage = false;
         }
         else{
             messageError.value = '';
         
         }
 
-        return sendMessage.value
+        return sendMessage
 }
 
 const submitForm = async () => {
     try{
-        sendMessage.value = false;
         message.value = '';
         
+        
 
-
-        if (validateData(formData.value) == true){
+         if (validateData(formData.value)){
             const res = await $fetch('/api/contact', {
                 method: 'POST',
                 body: JSON.stringify(formData.value),
@@ -75,7 +74,7 @@ const submitForm = async () => {
                     'Content-Type': 'application/json',
                 }
             })
-            console.log(res);
+            
             if (res == 'success'){
                 message.value = 'Your message has been sent. I will get back to you as soon as possible!'
                 formData.value.name = '';
@@ -85,7 +84,7 @@ const submitForm = async () => {
             else{
                 message.value = 'Something went wrong. Please try again.'
             }
-        }
+         }
         
     }
     catch (err){
