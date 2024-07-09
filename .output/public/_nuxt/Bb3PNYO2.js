@@ -1,0 +1,1 @@
+import{H as c,T as n}from"./DX-xIt76.js";import{_ as s,c as l,a as e,w as o,e as r,o as _,d}from"./CAI-sonL.js";const f={},i=r("h1",null,"Portfolio",-1);function u(m,p){const t=n,a=c;return _(),l("div",null,[e(a,null,{default:o(()=>[e(t,null,{default:o(()=>[d("Portfolio")]),_:1})]),_:1}),i])}const T=s(f,[["render",u]]);export{T as default};
