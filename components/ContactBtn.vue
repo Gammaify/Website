@@ -20,6 +20,6 @@ function CloseContactUs(){
 </script>
 
 <template>
-    <div class="hover:animate-jump hover:cursor-pointer primaryButton p-4 ml-4 text-white font-medium" @click="OpenContactUs(); $emit('closeMenu')">Contact</div >
+    <div class="hover:animate-jump hover:cursor-pointer primaryButton p-4 ml-4 text-white font-medium" @click="OpenContactUs(); $emit('closeMenu')">Contact2</div >
     <ContactPopup :Open="isContactUsOpen" @close-contact-form="CloseContactUs" />
 </template>
