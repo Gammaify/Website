@@ -56,6 +56,7 @@
   align-items: center;
   display: flex;
   border-radius: 10px;
+  width: fit-content;
 }
 
 .fade-enter-active,

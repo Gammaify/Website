@@ -16,7 +16,7 @@ const emits = defineEmits(['closeMenu'])
   <nav v-if="Mobile != true" class="flex select-none font-sans text-base font-medium max-sm:hidden pr-4 textPrimaryColor items-center">
     <NuxtLink  class="p-4 hover:animate-jump" to="/">Home</NuxtLink >
     <NuxtLink  class="p-4 hover:animate-jump" to="/#portfolio">Portfolio</NuxtLink >
-    <!-- <NuxtLink  class="p-4 hover:animate-jump" to="/hosting">Hosting</NuxtLink > -->
+    <NuxtLink  class="p-4 hover:animate-jump" to="/affiliates">Affiliates</NuxtLink >
     <NuxtLink  class="p-4 hover:animate-jump" to="/about">About</NuxtLink >
     <ContactBtn />
   </nav>
@@ -27,7 +27,7 @@ const emits = defineEmits(['closeMenu'])
   >
     <NuxtLink  class="block w-full p-4 text-center" to="/">Home</NuxtLink >
     <NuxtLink  class="block w-full p-4 text-center" to="/#portfolio">Portfolio</NuxtLink >
-    <!-- <NuxtLink  class="block w-full p-4 text-center" to="/hosting">Hosting</NuxtLink > -->
+    <NuxtLink  class="block w-full p-4 text-center" to="/affiliates">Affiliates</NuxtLink >
     <NuxtLink  class="block w-full p-4 text-center" to="/about">About</NuxtLink >
   </nav>
 
@@ -47,12 +47,12 @@ const emits = defineEmits(['closeMenu'])
       to="/#portfolio"
       >Portfolio</NuxtLink 
     >
-    <!-- <NuxtLink 
+    <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"
       @click="$emit('closeMenu')"
-      to="/hosting"
-      >Hosting</NuxtLink 
-    > -->
+      to="/affiliates"
+      >Affiliates</NuxtLink 
+    >
     <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"
       @click="$emit('closeMenu')"
@@ -77,12 +77,12 @@ const emits = defineEmits(['closeMenu'])
       to="/#portfolio"
       >Portfolio</NuxtLink 
     >
-    <!-- <NuxtLink 
+    <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"
       @click="$emit('closeMenu')"
-      to="/hosting"
-      >Hosting</NuxtLink 
-    > -->
+      to="/affiliates"
+      >Affiliates</NuxtLink 
+    >
     <NuxtLink 
       class="block w-full p-4 text-center hover:animate-jump"
       @click="$emit('closeMenu')"
