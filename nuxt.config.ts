@@ -18,11 +18,6 @@ export default defineNuxtConfig({
         
       }
     }
-  },
-  cron: {
-    runOnInit: true,
-    timeZone: 'Europe/London',
-    jobsDir: 'cron'
-  },
-  modules: ['nuxt-security', 'nuxt-cron']
+  }, 
+  modules: ['nuxt-security']
 })

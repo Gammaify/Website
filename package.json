@@ -15,7 +15,6 @@
   "dependencies": {
     "long": "^5.2.3",
     "mysql2": "^3.10.2",
-    "nodemailer": "^6.9.14",
     "nuxt": "^3.11.2",
     "nuxt-security": "^2.0.0-rc.6",
     "tailwindcss-animated": "^1.1.0",
@@ -27,9 +26,9 @@
     "@types/nodemailer": "^6.4.15",
     "autoprefixer": "^10.4.19",
     "husky": "^9.0.11",
-    "nuxt-cron": "^1.5.1",
+    "nodemailer": "^7.0.13",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
-    "wrangler": "^3.59.0"
+    "wrangler": "^4.64.0"
   }
 }
